@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Number Generator</title>
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div>
+        <label for="sides">Number of dice:</label>
+        <input type="text" id="num-of-dice">
+        <div id="error" hidden>
+            Error: Please enter a number
+        </div>
+
+        <div class="selection">
+            <label for="sides">Number of sides:</label>
+
+            <select name="sides" id="sides">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+            </select>
+        </div>
+
+        <div class="roll">
+            <button id="roll-button">Roll dice</button>
+        </div>
+
+        <div id="total-dice-rolled">
+
+        </div>
+
+        <span class="pip"></span>
+    </div>
+    <!-- Script -->
+    <script src="script.js"></script>
+</body>
+</html>
