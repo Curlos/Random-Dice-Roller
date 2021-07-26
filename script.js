@@ -1,6 +1,7 @@
 const numOfDiceElem = document.getElementById('num-of-dice')
 const sidesElem = document.getElementById('sides')
 const rollButtonElem = document.getElementById('roll-button')
+const dice = document.getElementById('dice')
 
 const getRandomNumber = (min, max) => {
     return Math.floor(Math.random() * ((max + 1) - min)) + min
@@ -26,9 +27,32 @@ const rollDice = () => {
             results.push(dieNumber)
         }
 
-        console.log(results)
+        displayDice(results)
     } else {
         displayErrorMessage("Please enter a number from 1 to 50")
+    }
+}
+
+
+const createDie = (faceNumber) => {
+    const face = document.createElement('div')
+    face.classList.add('face')
+
+    for(let i = 0; i< faceNumber; i++) {
+        const pip = document.createElement('span')
+        pip.classList.add('pip')
+        face.appendChild(pip)
+    }
+
+    dice.appendChild(face)
+}
+
+const displayDice = (results) => {
+
+    console.log(results)
+
+    for (let faceNumber of results) {
+        createDie(faceNumber)
     }
 }
 
