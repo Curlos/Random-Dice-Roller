@@ -3,22 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Random Number Generator</title>
+    <title>Random Dice Game</title>
     <link rel="icon" type="image/png" href="favicon.png">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div>
-        <label for="sides">Number of dice:</label>
-        <input type="text" id="num-of-dice">
-        <div id="error" hidden>
-            Error: Please enter a number
-        </div>
+        <h1>Random Dice Game</h1>
+        <label for="numOfDice">Number of dice:</label>
+        <input type="number" class="numOfDice" id="numOfDice">
 
         <div class="selection">
             <label for="sides">Number of sides:</label>
 
-            <select name="sides" id="sides">
+            <select name="sides" class="sides" id="sides">
                 <option value="1">1</option>
                 <option value="2">2</option>
                 <option value="3">3</option>
@@ -29,16 +27,10 @@
         </div>
 
         <div class="roll">
-            <button id="roll-button">Roll dice</button>
+            <button class="rollButton" id="rollButton">Roll dice</button>
         </div>
 
-        <div id="total-dice-rolled">
-
-        </div>
-
-        <div id="dice" class="dice">
-
-        </div>
+        <div id="dice" class="dice"></div>
     </div>
     <!-- Script -->
     <script src="script.js"></script>
