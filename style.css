@@ -13,6 +13,15 @@ input, select {
             box-sizing: border-box;
 }
 
+.header {
+    font-size: 35px;
+}
+
+.header-icons {
+    float: right;
+    font-size: 35px;
+}
+
 .sides, .numOfDice {
     border-radius: 0.5rem;
     padding: 5px;
