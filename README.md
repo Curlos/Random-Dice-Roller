@@ -10,7 +10,7 @@
   <h3 align="center">Random Dice Roller</h3>
 
   <p align="center">
-    <a href="https://github.com/othneildrew/Best-README-Template">View Demo</a>
+    <a href="https://frosty-brahmagupta-e109f1.netlify.app/">View Demo</a>
     ·
     <a href="https://github.com/Curlos/Random-Number-Generator/issues">Report Bug</a>
     ·
